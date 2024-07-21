@@ -1,0 +1,89 @@
+.input
+  height: 55px
+  width 100%
+  padding: 0 30px;
+  font-family: "Mont-Light"
+  font-weight: 300
+  font-size: 18px;
+  line-height: 140%
+  color: $color-grey
+  background-color: $color-white
+  position relative
+  &.active
+    .input__progress
+      opacity 1
+      min-width: 40px
+      span
+        opacity 1
+  &__progress
+    position: absolute
+    height: 100%
+    top: 0
+    left: 0
+    background: #323232;
+    opacity 0
+    min-width: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 16px
+    line-height: 16px
+    transition: min-width 1s, opacity 0.8s
+    color: $color-white
+    font-weight: bold
+    border-radius: 8px
+    +above($breakpoints.xxl)
+      font-size: 20px
+      line-height: 20px
+    span
+      opacity 0
+      transition: 2s
+  border 1px solid $color-grey
+  border-radius: 91px;
+  transition border-color 0.3s, box-shadow 0.3s
+  &:hover
+    border 2px solid $color-grey
+  &:focus
+    color: $color-dark-violet
+    caret-color: $color-dark-violet
+    border 1px solid $color-dark-violet
+    box-shadow: 3px 3px 20px 0px $color-dark-violet
+    ::placeholder
+      color: $color-grey
+  &::placeholder
+    color: $color-grey
+  +above($breakpoints.sm)
+    height: 60px
+  +above($breakpoints.md)
+    height: 65px
+  &.error
+    border 1px solid $color-error
+    color: $color-error
+    caret-color: $color-error
+    box-shadow: 0px 0px 57px 0px $color-grey
+    background-color #fff
+    &::placeholder
+      color: $color-error
+    &::-ms-input-placeholder
+      color: $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+  &--textarea
+    outline none
+    padding: 16px 24px
+    resize: none
+    height: 130px
+    +above($breakpoints.sm)
+      height: 130px
+    +above($breakpoints.md)
+      height: 130px
+

@@ -1,0 +1,89 @@
+.support-section
+
+  &__container
+    position relative
+    z-index 1
+    color: $color-text-black
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 20px 0
+    +above($breakpoints.lg)
+      padding 120px 0 120px 0
+
+  &__title
+    padding 0 0 20px 0
+    text-align: center
+    +above($breakpoints.lg)
+      text-align: start
+      padding 0 0 70px 60px
+
+  &__text
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      gap: 20px
+    +above($breakpoints.lg)
+      gap: 24px
+
+  &__box
+    display: flex
+    flex-direction: column-reverse
+    gap: 20px
+    +above($breakpoints.lg)
+      flex-direction: row
+      align-items: flex-end
+    +above($breakpoints.xxl)
+      gap: 45px
+
+  &__text-item
+    width 100%
+    max-width: 537px
+    line-height 110%
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    gap: 10px
+    +above($breakpoints.sm)
+      gap: 40px
+
+  &__arrow
+    transform: rotate(-90deg)
+    width 15px
+    height: 10px
+    margin-top 5px
+    +above($breakpoints.sm)
+      width 23px
+      height: 16px
+
+  &__icon
+    width 120px
+    height: 120px
+    transform: rotate(35deg)
+    position: relative;
+    z-index: -1;
+    margin 0 auto 20px
+    +above($breakpoints.xxl)
+      position: absolute
+      top: 190px
+      right: 170px
+      margin 0
+      width 177px
+      height: 177px
+
+  &__image
+    width 300px
+    height: auto
+    margin: 0 auto
+    border-radius: 20px
+    border: 2px solid $color-beige
+    +above($breakpoints.sm)
+      border: 4px solid $color-beige
+      border-radius: 40px
+      width 450px
+    +above($breakpoints.xxl)
+      width 522px
+      height: 519px
+      border-radius: 60px
+      border: 6px solid $color-beige

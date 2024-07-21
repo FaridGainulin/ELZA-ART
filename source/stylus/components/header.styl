@@ -1,0 +1,23 @@
+.header
+  &__container
+    color: $color-dark-violet
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content center
+    gap 20px
+    +above($breakpoints.lg)
+      justify-content space-between
+    +above($breakpoints.xxl)
+      justify-content flex-end
+      gap 390px
+
+
+  &__title
+    text-align: center
+    +above($breakpoints.lg)
+      text-transform: uppercase
+      letter-spacing 3px
+    +above($breakpoints.xxl)
+      padding-right: 95px;
+

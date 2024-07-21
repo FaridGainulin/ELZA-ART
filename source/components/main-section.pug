@@ -1,0 +1,30 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      img.main-section__logo(src="images/logo.png" loading="lazy" width="375" height="142" alt="logo")
+      .main-section__arrows
+        img.main-section__arrow(src="images/arrow-green.svg" loading="lazy" width="30" height="20" alt="arrow")
+        img.main-section__arrow(src="images/arrow-green.svg" loading="lazy" width="30" height="20" alt="arrow")
+        img.main-section__arrow(src="images/arrow-green.svg" loading="lazy" width="30" height="20" alt="arrow")
+      h1.main-section__title.font-w-bold.font-s-48
+        span.text-up Зарабатывайте <br>
+        span.mark-green от 1 500 000 тенге <br> в месяц
+      .main-section__sub-title.font-s-32.color-black
+        | на производстве и продаже 
+        br.no-br
+        | эксклюзивной этно 
+        br.no-br
+        | и национальной одежды 
+        br.no-br
+        | и аксессуаров
+      .main-section__text.font-s-20
+        | Получите пошаговый план запуска прибыльного бизнеса 
+        br.no-br
+        | с окупаемостью от 6 месяцев по франшизе «ELZA ART»
+      form.main-section__form(data-feedback-form)
+        input.item-main.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.item-main.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn.btn--beige.item-main(type="submit") Получить
+      img.main-section__img(src="images/main-section-img-mobile.jpg" loading="lazy" width="627" height="452" alt="image")
+      img.main-section__img-large(src="images/main-section-img-desktop.png" loading="lazy" width="978" height="700" alt="image")

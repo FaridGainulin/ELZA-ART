@@ -1,0 +1,31 @@
+.header-thanks
+  &__container
+    padding 30px 0
+    color: $color-dark-violet
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content center
+    gap 20px
+    +above($breakpoints.lg)
+      justify-content space-around
+
+  &__title
+    text-align: center
+    +above($breakpoints.lg)
+      text-transform: uppercase
+
+  &__logo
+    width 150px
+    height: auto
+    +above($breakpoints.sm)
+      width 250px
+      height: 95
+
+  &__title
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+.footer-wrapper
+  padding: 30px 0

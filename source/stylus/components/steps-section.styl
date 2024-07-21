@@ -1,0 +1,192 @@
+.steps-section
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.xxl)
+      padding 120px 0 41px 0
+
+  &__title
+    text-align: center
+    padding 20px 0
+    +above($breakpoints.xxl)
+      padding 0
+      position: absolute
+      z-index 1
+      top: 120px;
+      left: 27px;
+      width 317px
+      text-align: start
+
+  &__wrapper-cards
+    position relative
+    background-color $color-beige
+    border-radius: 20px
+    padding 20px 0
+    +above($breakpoints.sm)
+      overflow hidden
+    +above($breakpoints.xxl)
+      background-image: url("../images/steps-section-bg.svg")
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      background-color #fff
+      overflow: visible
+      height: 1041px
+      padding 0
+      border-radius: 0
+
+  &__image
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      border-radius: 60px
+      position: absolute
+      top: 331px
+      right: 0
+
+  &__stars
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      top: -122px;
+      left: -165px;
+
+  &__cards
+    +above($breakpoints.xxl)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content center
+      gap: 10px
+
+  &__card-white
+    width 280px !important
+    border-radius: 30px
+    background-color #fff
+    padding 23px 40px 55px 40px
+    height: 208px
+    +above($breakpoints.sm)
+      width 360px !important
+    +above($breakpoints.xxl)
+      width 280px !important
+
+  &__card-white-header
+    display: flex
+    flex-direction: row
+    gap: 32px
+    justify-content center
+    align-items: center
+    padding-bottom 43px
+    +above($breakpoints.xxl)
+      justify-content flex-end
+
+  &__card-green
+    width 280px !important
+    border-radius: 30px
+    color: white
+    background-color $color-green
+    padding 23px 26px 32px 40px
+    height: 208px
+    +above($breakpoints.sm)
+      width 360px !important
+    +above($breakpoints.xxl)
+      width 361px !important
+      padding 23px 26px 32px 51px
+
+  &__card-green-header
+    display: flex
+    flex-direction: row
+    gap: 32px
+    justify-content center
+    align-items: center
+    padding-bottom 43px
+    +above($breakpoints.xxl)
+      justify-content space-evenly
+
+  &__bottom
+    position relative
+    z-index 1
+    text-align: center
+    padding 20px 10px 0 10px
+    display: flex
+    flex-direction: column
+    gap 20px
+    +above($breakpoints.xxl)
+      flex-direction: row
+      text-align: start
+      gap: 50px
+      padding 65px 0px 80px 72px
+
+  &__blank
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position: absolute
+      right: 0
+      top: 0
+      z-index -1
+
+.steps-button
+  +above($breakpoints.sm)
+    width 320px
+    margin 0 auto
+  +above($breakpoints.xxl)
+    margin 0
+
+.card-1
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 324px
+    left: 70px
+.card-2
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 552px
+    left: 70px
+.card-3
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 780px
+    left: 70px
+.card-4
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 64px
+    right: 429px
+.card-5
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 64px
+    right: 44px
+.card-6
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 324px
+    left: 381px
+.card-7
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 324px
+    right: 206px
+.card-8
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 552px
+    left: 381px
+.card-9
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 552px
+    right: 206px
+.card-10
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 780px
+    right: 436px
+.card-11
+  +above($breakpoints.xxl)
+    position: absolute
+    top: 780px
+    right: 44px

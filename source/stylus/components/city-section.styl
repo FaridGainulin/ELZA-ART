@@ -1,0 +1,90 @@
+.city-section
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 58px 0 30px 0
+
+  &__header
+    text-align: center
+    +above($breakpoints.lg)
+      padding-right: 132px;
+      text-align: end
+    +above($breakpoints.xxl)
+      padding-right: 170px;
+      padding-bottom 34px
+
+  &__title
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      width 592px
+      padding 55px 0 83px 45px;
+    +above($breakpoints.xxl)
+      padding 51px 0 128px 68px;
+
+  &__text-right
+    padding 20px 0 20px 0
+    text-align: center
+    +above($breakpoints.lg)
+      padding 0 0 30px 0
+
+  &__text-left,
+  &__title
+    text-align: center
+    +above($breakpoints.lg)
+      text-align: start
+
+  &__box
+    display: flex
+    flex-direction: column
+    +above($breakpoints.lg)
+      flex-direction: row
+      background-image: url("../images/city-section-bg.svg")
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+
+  &__text-left
+    background-color $color-beige
+    color: white
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    padding 20px 0
+    width: 100%;
+    max-width: 490px;
+    margin: 0 auto;
+    +above($breakpoints.lg)
+      max-width 100%
+      margin 0
+      text-align: center
+      background-color transparent
+      padding-left 45px
+    +above($breakpoints.xxl)
+      padding 0 0 0 81px
+
+  &__box-right
+    background-color $color-beige
+    color: white
+    border-bottom-left-radius: 20px
+    border-bottom-right-radius: 20px
+    padding-bottom 20px
+    width: 100%;
+    max-width: 490px;
+    margin: 0 auto;
+    +above($breakpoints.lg)
+      background-color transparent
+      padding 47px 115px 85px 17px;
+    +above($breakpoints.xxl)
+      margin 0
+      padding 99px 0px 85px 150px;
+
+  &__form
+    width 280px
+    margin 0 auto
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+  &__footer-wrapper
+    padding-top 38px

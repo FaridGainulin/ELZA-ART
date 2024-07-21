@@ -1,0 +1,34 @@
+.footer
+
+  &__container
+    display: flex
+    flex-direction: column
+    gap: 10px
+    align-items: center
+    +above($breakpoints.lg)
+      flex-direction: row
+      justify-content space-around
+
+  &__connection
+    width 100%
+    max-width: 280px
+    height: 55px
+    display: flex
+    align-items: center
+    justify-content center
+    background-color $color-green
+    color: white
+    border-radius: 91px
+    +above($breakpoints.lg)
+      height: 65px
+
+  &__privacy
+    text-decoration: underline
+    text-decoration-color #2E293270
+
+  &__logo
+    width 150px
+    height: auto
+    +above($breakpoints.sm)
+      width 250px
+      height: 95

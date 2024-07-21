@@ -1,0 +1,101 @@
+.main-section
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 33px 0 120px 0
+
+  &__logo
+    width 300px
+    height: auto
+    margin 20px auto
+    +above($breakpoints.sm)
+      width 375px
+      height: 142px
+    +above($breakpoints.xxl)
+      margin 0
+      position: absolute
+      top: 111px
+      right: 23px
+
+  &__arrows
+    width 192px
+    height: 30px
+    margin 0 auto
+    display: flex
+    align-items: center
+    justify-content space-between
+    +above($breakpoints.xxl)
+      width 30px
+      height: 192px
+      flex-direction: column
+      margin 85px 0 111px 68px
+
+  &__title,
+  &__sub-title,
+  &__text
+    text-align: center
+    +above($breakpoints.lg)
+      text-align: start
+
+  &__text
+    padding 20px 0 20px 0
+    +above($breakpoints.xxl)
+      padding 53px 0 20px 0
+
+  &__title
+    padding 20px 0 20px 0
+    +above($breakpoints.xxl)
+      padding 20px 0 15px 0
+
+  &__form
+    width 100%
+    max-width: 880px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content center
+    gap: 10px
+    margin 0 auto
+    +above($breakpoints.lg)
+      margin 0
+      flex-direction: row
+      justify-content start
+
+  &__img
+    width 280px
+    height: auto
+    border-radius: 20px
+    margin 20px auto 0
+    +above($breakpoints.sm)
+      width 480px
+      height: auto
+    +above($breakpoints.lg)
+      display: none
+
+  &__img-large
+    display: none
+    +above($breakpoints.lg)
+      display: block
+      position: absolute
+      width: 474px;
+      height: auto
+      top: 297px;
+      right: 0
+    +above($breakpoints.xxl)
+      width 978px
+      height: 700px
+      top: 100px
+      right: 0
+
+
+.item-main
+  width 100%
+  max-width 280px
+  +above($breakpoints.sm)
+    max-width 480px
+  +above($breakpoints.lg)
+    max-width 280px
+
+

@@ -1,0 +1,67 @@
+.start-section
+
+  &__container
+    padding 20px 0 20px 0
+    text-align: center
+    +above($breakpoints.lg)
+      padding 120px 0 120px 0
+
+  &__sub-title
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 23px 0 70px 0
+
+  &__cards
+    +above($breakpoints.lg)
+      display: flex
+      flex-direction: row
+      justify-content center
+      gap: 30px
+
+  &__card
+    position relative
+    width 300px !important
+    height: 290px
+    border 2px solid $color-beige
+    border-radius: 15px
+    padding 50px 0 20px 0
+    box-shadow: 0px 34px 40.2px 0px rgba(0, 0, 0, 0.05)
+    +above($breakpoints.sm)
+      padding 90px 0 47px 0
+      width 543px !important
+      height: 419px
+
+  &__card-text
+    padding 18px 0 29px
+
+  &__oval
+    position: absolute
+    width 140px
+    height: auto
+    top: 0
+    left: 50%
+    transform: translateX(-34%)
+    +above($breakpoints.sm)
+      width 226px
+      height: 65px
+
+  &__arrow
+    position: absolute
+    width 20px
+    height: auto
+    top: 7px
+    left: 50%
+    transform: translateX(-0%)
+    +above($breakpoints.sm)
+      width 30px
+      height: 20px
+      top: 16px
+
+.start-item
+  width 180px
+  margin 0 auto
+  +above($breakpoints.sm)
+    width 353px
+
+
+

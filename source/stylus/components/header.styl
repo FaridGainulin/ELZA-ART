@@ -5,7 +5,9 @@
     flex-direction: row
     align-items: center
     justify-content center
-    gap 20px
+    gap 10px
+    +above($breakpoints.sm)
+      gap 20px
     +above($breakpoints.lg)
       justify-content space-between
     +above($breakpoints.xxl)
@@ -14,10 +16,30 @@
 
 
   &__title
-    text-align: center
+    display: none
+    +above($breakpoints.xxl)
+      text-align: center
+      display: block
+      text-transform: uppercase
+      letter-spacing 3px
+      padding-right: 95px;
+
+  &__title-tablet
+    display: none
     +above($breakpoints.lg)
+      text-align: center
+      display: block
       text-transform: uppercase
       letter-spacing 3px
     +above($breakpoints.xxl)
-      padding-right: 95px;
+      display: none
 
+  &__logo
+    width 150px
+    height: auto
+    +above($breakpoints.sm)
+      width 200px
+    +above($breakpoints.md)
+      width 250px
+    +above($breakpoints.xxl)
+      display: none

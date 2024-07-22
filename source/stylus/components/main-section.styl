@@ -7,26 +7,23 @@
       padding 33px 0 120px 0
 
   &__logo
-    width 300px
-    height: auto
-    margin 20px auto
-    +above($breakpoints.sm)
+    display: none
+    +above($breakpoints.xxl)
+      display: block
       width 375px
       height: 142px
-    +above($breakpoints.xxl)
       margin 0
       position: absolute
       top: 111px
       right: 23px
 
   &__arrows
-    width 192px
-    height: 30px
-    margin 0 auto
-    display: flex
-    align-items: center
-    justify-content space-between
+    display: none
     +above($breakpoints.xxl)
+      display: block
+      display: flex
+      align-items: center
+      justify-content space-between
       width 30px
       height: 192px
       flex-direction: column
@@ -81,7 +78,7 @@
       position: absolute
       width: 474px;
       height: auto
-      top: 297px;
+      top: 164px;
       right: 0
     +above($breakpoints.xxl)
       width 978px
